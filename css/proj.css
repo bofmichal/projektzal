@@ -1,3 +1,72 @@
-body{
-    background-color: blue;
+body
+{
+background-color: #3355FA; 
+color: white;
+font-size: 22px;
+
+}
+
+h1{
+font-size:24px;
+}
+
+#michal
+{
+width: 120px;
+}
+
+#dane_os{
+background-color: #3355FA;
+float: left;
+border: 1px solid black;
+width: 350px;
+text-align: left;
+min-height: 280px;
+
+}
+
+#pdo2{
+background-color: #2600E6;
+border: 1px solid black;
+padding-left: 25px;
+}
+
+#doswiadczenie{
+float: left;
+width: 450px;
+text-align: left;
+min-height: 280px;
+border: 1px solid black;
+padding-left: 25px;
+}
+
+p{
+font-size: 18px;
+padding-left: 25px;
+
+}
+
+#data_ur{
+font-size: 18px;
+padding-left: 25px;
+font-style: italic;
+
+}
+
+
+#adres{
+font-size: 18px;
+padding-left: 25px;
+font-style: italic;
+
+}
+
+a{
+color: black;
+}
+
+li{
+font-size: 18px;
+padding-bottom: 5px;
+padding-right: 5px;
 }
