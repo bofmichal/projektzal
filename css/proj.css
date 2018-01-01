@@ -3,17 +3,19 @@ body
 background-color: #3355FA; 
 color: white;
 font-size: 22px;
-
 }
 
 h1{
 font-size:24px;
+text-align: center;
 }
 
 #michal
 {
 width: 120px;
+margin: 0 auto;
 }
+
 
 #dane_os{
 background-color: #3355FA;
@@ -22,22 +24,29 @@ border: 1px solid black;
 width: 350px;
 text-align: left;
 min-height: 280px;
-
 }
 
-#pdo2{
+
+.naglowki{
 background-color: #2600E6;
 border: 1px solid black;
-padding-left: 25px;
+padding-left: 25px;    
 }
 
 #doswiadczenie{
 float: left;
-width: 450px;
+width: 600px;
 text-align: left;
 min-height: 280px;
 border: 1px solid black;
-padding-left: 25px;
+}
+
+#formularz{
+float: left;
+width: 600px;
+text-align: left;
+min-height: 280px;
+border: 1px solid black;
 }
 
 p{
@@ -46,27 +55,49 @@ padding-left: 25px;
 
 }
 
+.walidacja{
+    font-size: 18px;
+    padding-left: 25px;  
+}
+
 #data_ur{
 font-size: 18px;
 padding-left: 25px;
 font-style: italic;
-
 }
 
 
-#adres{
+#adres, #email, #tel{
 font-size: 18px;
 padding-left: 25px;
 font-style: italic;
+color: white;
+}
 
+#lista_um{
+padding-left: 5px;
+padding-right: 5px;
+font-style: italic;
+list-style-type: circle;
 }
 
 a{
-color: black;
+color: white;
 }
 
-li{
-font-size: 18px;
-padding-bottom: 5px;
-padding-right: 5px;
+a:hover{
+color: black;
+background-color: gray;
 }
+
+table, td{
+font-size: 18px;
+border: 1px solid black;
+width: 550px;
+margin: auto;
+}
+
+    input:hover, button:hover{
+    cursor: pointer;
+    background-color: gray;
+    }

@@ -12,42 +12,85 @@
         <h1 font>Michał Bowsiuk - CV</h1>
         <div id="michal"></div>
         <div id="dane_os">
-            <p id="pdo2">Dane osobowe:</p>
+            <p class="naglowki" id="pdo2">Dane osobowe:</p>
             <p id="pdo1"><b>Data urodzenia:</b></p><p id="data_ur"></p>
             <p id="adres1"><b>Adres:</b></p><div id="adres"></div>
-            <p><b>Adres e-mail:</b> <i><a href="mailto:bofmichal@gmail.com">bofmichal@gmail.com</a></i></p>
-            <p><b>Telefon:</b> <i>+48 510 329 364</i></p>
-            <p>Umiejętności:</p>
-            <ul>
-                <li>Dobra obsługa komputera</li>
-                <li>Znajomość systemów operacyjnych Windows</li>
-                <li>Dobra znajomość pakietu Microsoft Office</li>
-                <li>Dobra znajomość programu AutoCad</li>
-            </ul>
+            <p><b>Adres e-mail:</b></p><p id="email"></p> 
+            <p><b>Telefon:</b></p><p id="tel"></p>
+            <p class="naglowki" id="umiejetnosci">Umiejętności:</p>
+            <p id="lista_um"></p>
+            
+            
         </div>
         
         <div id="doswiadczenie">
-            <p>Doświadczenie:</p>
+            <p class="naglowki" >Doświadczenie:</p>
+            <input type="button" value="sortuj po dacie" id="sortData">
+            <input type="button" value="sortuj po nazwie firmy" id="sortNazwa">  
+            <input type="button" value="sortuj po okresie zatrudnienia" id="sortOkres">
+            <!--<table>
+                <tr>
+                    <td><b>Data:</b></td>
+                    <td><b>Okres [mies]:</b></td>
+                    <td><b>Nazwa firmy:</b></td>
+                    <td><b>Stanowisko:</b></td>
+                </tr>
+            </table>-->
         </div>
-        <!--<div>            
+        
+        <div id="formularz">
+            <p class="naglowki" >Formularz kontaktowy:</p>
+                <button onclick="chowaj(1)">Ukryj formularz</button>
+                <button onclick="chowaj(2)">Pokarz formularz</button>
             <form action="#" method="get" id="formularz1">
-                <table>
-                    <caption><font size="4"><b>Bowsiuk Michał - CV</b></font></caption>
+                
+                <table id="chowaj">
+                    <caption><font size="4"><b>Formularz danych</b></font></caption>
                     <tr>
-                    <th>Dane osobowe</th>
-                    <th></th>
-                    <th>Doświadczenie</th>
-                    <th></th>
+                    <td align="right">Imię </td>
+                    <td><input id="imie" type="text" name="name" title="imię" placeholder="imię" required/></td>
                     </tr>
-                                        
                     <tr>
-                        <td align="right">Imię i Nazwisko: </td>
-                        <td align="right">Michał Bowsiuk</td>
-                        <td align="right">11.2016-obecnie</td>
-                        <td align="right">Tare Sp z o.o.</td>
+                        <td align="right">Nazwisko </td>
+                        <td><input id="nazwisko" type="text" name="name2" title="nazwisko" placeholder="nazwisko" required/></td>
                     </tr>
-                    
-                    
-        </div>-->
+                    <tr>
+                        <td align="right">Nr telefonu</td>
+                        <td><input id="nr_tel" type="text" name="number" title="nr telefonu" maxlength=11 placeholder="nr telefonu"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right">adres email</td>
+                        <td><input id="email2" type="email" name="email" title="adres email" placeholder="e-mail" required/>
+                    </tr>
+                    <tr>
+                        <td align="right">Temat</td>
+                        <td><select name="temat">
+                        <option>Nawiązanie współpracy</option>
+                        <option>Pytanie o doświadczenie</option>
+                        <option>Kwalifikacje</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Opis</td>
+                        <td><textarea cols="20" rows="4" name="opis" title="opis" placeholder="opis"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Zgoda na newsletter</td>
+                        <td><input type="checkbox" name="poufnosc" title="newsletter"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Załącz plik</td>
+                        <td><input type="file" name="plik" title="zalacznik"/></td>
+                    </tr>
+                </table>
+                <input type="reset" onclick="resetuj()"/>
+                <!--<input type="submit" onsubmit="sprawdz()"/>-->
+                <button type="button" onclick="sprawdz()">Prześlij</button>
+                <div class="walidacja" id="walidacja"></div>
+                <div class="walidacja" id="walidacja_1"></div>
+                <div class="walidacja" id="walidacja_2"></div>
+                <div class="walidacja" id="walidacja_3"></div>
+                <div class="walidacja" id="walidacja_4"></div>
+            </form>
     </body>
 </html>
