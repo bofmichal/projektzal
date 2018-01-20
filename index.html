@@ -4,48 +4,75 @@
         <title>CV Michał Bowsiuk</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/proj.css" type="text/css" />
-        <script type="text/javascript" src="js/proj.js"></script>
+        <link rel="stylesheet" href="newcss.css" type="text/css" />
+        
         
     </head>
     <body onload="zaladuj()">
-        <h1 font>Michał Bowsiuk - CV</h1>
-        <div id="michal"></div>
+        <h1>Michał Bowsiuk - CV</h1>
+        <!--caly dokument-->
+        <div class="page_container" style="max-width:1400px;">
+            <!--krata-->
+            <div class="grid">
+                <!--lewa kolumna-->
+                <div class="lewa">
+                    <div class="lewa1">
+                        
+                        <div id="michal" class="lewa2"></div>
+                            <p class="zdjecie1">
+                                <strong>Michał Bowsiuk</strong>
+                            </p>
+                            
+                        
         <div id="dane_os">
-            <p class="naglowki" id="pdo2">Dane osobowe:</p>
-            <p id="pdo1"><b>Data urodzenia:</b></p><p id="data_ur"></p>
-            <p id="adres1"><b>Adres:</b></p><div id="adres"></div>
-            <p><b>Adres e-mail:</b></p><p id="email"></p> 
-            <p><b>Telefon:</b></p><p id="tel"></p>
-            <p class="naglowki" id="umiejetnosci">Umiejętności:</p>
+            <p class="naglowki" id="pdo2"><img src="images/notebook.png" alt="" class="du"/><b>Dane osobowe:</b></p>
+            <p id="pdo1"><img src="images/f0b1.png" alt="" class="du"/><b>Data urodzenia:</b></p><p id="data_ur"></p>
+            
+            
+        <p id="adres1"><img src="images/home.png" alt="" class="du"/><b>Adres:</b></p><div id="adres"></div>
+            
+            <p><img src="images/envelope.png" alt="" class="du"/><b>Adres e-mail:</b></p><p id="email"></p> 
+            <p><img src="images/auricular-phone-symbol-in-a-circle.png" alt="" class="du"/><b>Telefon:</b></p><p id="tel"></p>
+            
+            
+            <p class="naglowki" id="umiejetnosci"><img src="images/settings.png" alt="" class="du"/><b>Umiejętności:</b></p>
             <p id="lista_um"></p>
             
             
+            <p class="naglowki" id="jobce"><img src="images/world.png" alt="" class="du"/><b>Języki obce:</b></p>
+            <p id="jezyki"></p>
+            
         </div>
+        </div>
+                </div>
         
         <div id="doswiadczenie">
-            <p class="naglowki" >Doświadczenie:</p>
-            <input type="button" value="sortuj po dacie" id="sortData">
-            <input type="button" value="sortuj po nazwie firmy" id="sortNazwa">  
-            <input type="button" value="sortuj po okresie zatrudnienia" id="sortOkres">
-            <!--<table>
-                <tr>
-                    <td><b>Data:</b></td>
-                    <td><b>Okres [mies]:</b></td>
-                    <td><b>Nazwa firmy:</b></td>
-                    <td><b>Stanowisko:</b></td>
-                </tr>
-            </table>-->
-        </div>
+            <p class="naglowki" ><img src="images/cells.png" alt="" class="du"/><b>Doświadczenie:</b></p>
+            
+            <!--<input type="button" onclick="sortTable(0)" value="sortuj po dacie" id="sortData">-->
+            <input type="button" onclick="sortTable(3)" value="sortuj po dacie" id="sortData" class="przycisk">
+            <input type="button" onclick="sortTable(2)" value="sortuj po okresie zatrudnienia" id="sortOkres" class="przycisk">
+            <input type="button" onclick="sortTable(1)" value="sortuj po nazwie firmy" id="sortNazwa" class="przycisk">  
+            
+                        
+        </div>                
         
+                <div id="wyksztalcenie">
+                    <p class="naglowki"><img src="images/open-book.png" alt="" class="du"/><b>Edukacja</b></p>
+            <p>2011-2012 <b>Politechnika Białostocka</b>/studia magisterskie</p><p id="edukacja1" class="edukacja"></p>
+            <p>2007-2011 <b>Politechnika Białostocka</b>/studia inżynierskie</p><p id="edukacja2" class="edukacja"></p>
+            <p>2004-2007 <b>Technikum Elektryczne w Białymstoku</b>/szkoła techniczna</p><p id="edukacja3" class="edukacja"></p>
+                </div>
+                
         <div id="formularz">
-            <p class="naglowki" >Formularz kontaktowy:</p>
-                <button onclick="chowaj(1)">Ukryj formularz</button>
-                <button onclick="chowaj(2)">Pokarz formularz</button>
+            <p class="naglowki" ><img src="images/check-form.png" alt="" class="du"/><b>Formularz kontaktowy:</b></p>
+                <button onclick="chowaj(1)" class="przycisk" id="ukrywanie">Ukryj formularz</button>
+                <button onclick="chowaj(2)" class="przycisk">Pokarz formularz</button>
             <form action="#" method="get" id="formularz1">
                 
                 <table id="chowaj">
                     <caption><font size="4"><b>Formularz danych</b></font></caption>
+                    
                     <tr>
                     <td align="right">Imię </td>
                     <td><input id="imie" type="text" name="name" title="imię" placeholder="imię" required/></td>
@@ -83,14 +110,24 @@
                         <td><input type="file" name="plik" title="zalacznik"/></td>
                     </tr>
                 </table>
-                <input type="reset" onclick="resetuj()"/>
+                <input type="reset" onclick="resetuj()" class="przycisk" id="resetuj"/>
                 <!--<input type="submit" onsubmit="sprawdz()"/>-->
-                <button type="button" onclick="sprawdz()">Prześlij</button>
+                <button type="button" onclick="sprawdz()" class="przycisk">Prześlij</button>
                 <div class="walidacja" id="walidacja"></div>
                 <div class="walidacja" id="walidacja_1"></div>
                 <div class="walidacja" id="walidacja_2"></div>
                 <div class="walidacja" id="walidacja_3"></div>
                 <div class="walidacja" id="walidacja_4"></div>
             </form>
+        </div>
+            </div>
+        </div>
+        <footer class="stopka">
+            <p>Znajdź mnie w mediach społecznościowych.</p>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100016457467815"><img src="images/facebook-logo.png" alt="" class="media"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/michalbowsiuk/"><img src="images/linkedin-logo.png" alt="" class="media"/></a>
+            <p>© 2018 <b><u>Michał Bowsiuk</u></b> </p>
+        </footer>
+        <script type="text/javascript" src="newjavascript.js"></script>
     </body>
 </html>

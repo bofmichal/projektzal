@@ -1,8 +1,9 @@
 body
 {
-background-color: #3355FA; 
-color: white;
+background-color: white; 
+color: #76706F;
 font-size: 22px;
+margin: 0;
 }
 
 h1{
@@ -10,43 +11,109 @@ font-size:24px;
 text-align: center;
 }
 
+.page_container{
+    max-width:980px;
+    margin:auto;
+    margin-top:16px!important;
+}
+
+.grid:after{
+    padding:0 8px;
+}
+.grid:before{
+    padding:0 8px;
+}
+
+
+.lewa{
+    float:left;
+    width:400px;
+    padding-right: 25px;
+}
+
+.lewa1{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    width: 400px;
+    
+}
+
+.lewa2{
+    position:relative;
+    width: 400px;
+    margin:auto;
+}
+
+h2{
+    font-size:24px;
+text-align: center;
+width: 400px;
+}
+
+
+.zdjecie1{       
+    padding-left: 25px;
+    
+}
+
+
+
+.du{    
+    display:inline-block;    
+    margin-right:5px!important;
+    padding-top: 3px;
+    
+}
+
 #michal
 {
-width: 120px;
-margin: 0 auto;
+width: 400px;
+box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+
+
 }
 
 
 #dane_os{
-background-color: #3355FA;
+background-color: white;
 float: left;
-border: 1px solid black;
-width: 350px;
+box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+
+width: 400px;
 text-align: left;
 min-height: 280px;
 }
 
 
 .naglowki{
-background-color: #2600E6;
+background-color: #76706F;
 border: 1px solid black;
-padding-left: 25px;    
+padding-left: 25px;
+color: black;
 }
 
-#doswiadczenie{
+#doswiadczenie, #wyksztalcenie{
 float: left;
-width: 600px;
+width: 700px;
 text-align: left;
 min-height: 280px;
-border: 1px solid black;
+box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+padding-bottom: 25px;
+margin-bottom: 25px;
+}
+
+.edukacja{
+    padding-bottom: 20px;
+    padding-left: 65px;
+    font-style: italic;
 }
 
 #formularz{
 float: left;
-width: 600px;
+width: 700px;
 text-align: left;
 min-height: 280px;
-border: 1px solid black;
+box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+padding-bottom: 25px;
 }
 
 p{
@@ -64,6 +131,7 @@ padding-left: 25px;
 font-size: 18px;
 padding-left: 25px;
 font-style: italic;
+
 }
 
 
@@ -71,10 +139,10 @@ font-style: italic;
 font-size: 18px;
 padding-left: 25px;
 font-style: italic;
-color: white;
+color: #76706F;
 }
 
-#lista_um{
+#lista_um, #jezyki{
 padding-left: 5px;
 padding-right: 5px;
 font-style: italic;
@@ -82,7 +150,7 @@ list-style-type: circle;
 }
 
 a{
-color: white;
+color: #76706F;
 }
 
 a:hover{
@@ -99,5 +167,27 @@ margin: auto;
 
     input:hover, button:hover{
     cursor: pointer;
-    background-color: gray;
+    background-color: gray;    
     }
+ 
+    #sortData, #ukrywanie, #resetuj{
+        margin: 2px 2px 2px 75px;
+    }
+    
+    .stopka{
+      background-color: #76706F;
+        color: black;
+        box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+        padding:0.01em 16px;
+        margin: 0;
+        float: left;
+        width: 100%;
+        text-align: center;
+        min-height: 100px;
+    } 
+    
+    .media{    
+    display:inline-block;    
+    
+    
+}
