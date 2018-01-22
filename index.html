@@ -45,17 +45,14 @@
         </div>
         </div>
                 </div>
-        
+        <!--Prawa kolumna-->
         <div id="doswiadczenie">
-            <p class="naglowki" ><img src="images/cells.png" alt="" class="du"/><b>Doświadczenie:</b></p>
+            <p class="naglowki" ><img src="images/cells.png" alt="" class="du"/><b>Doświadczenie:</b></p>            
             
-            <!--<input type="button" onclick="sortTable(0)" value="sortuj po dacie" id="sortData">-->
             <input type="button" onclick="sortTable(3)" value="sortuj po dacie" id="sortData" class="przycisk">
             <input type="button" onclick="sortTable(2)" value="sortuj po okresie zatrudnienia" id="sortOkres" class="przycisk">
-            <input type="button" onclick="sortTable(1)" value="sortuj po nazwie firmy" id="sortNazwa" class="przycisk">  
-            
-                        
-        </div>                
+            <input type="button" onclick="sortTable(1)" value="sortuj po nazwie firmy" id="sortNazwa" class="przycisk">
+         </div>                
         
                 <div id="wyksztalcenie">
                     <p class="naglowki"><img src="images/open-book.png" alt="" class="du"/><b>Edukacja</b></p>
@@ -67,7 +64,7 @@
         <div id="formularz">
             <p class="naglowki" ><img src="images/check-form.png" alt="" class="du"/><b>Formularz kontaktowy:</b></p>
                 <button onclick="chowaj(1)" class="przycisk" id="ukrywanie">Ukryj formularz</button>
-                <button onclick="chowaj(2)" class="przycisk">Pokarz formularz</button>
+                <button onclick="chowaj(2)" class="przycisk" id="pokazywanie">Pokarz formularz</button>
             <form action="#" method="get" id="formularz1">
                 
                 <table id="chowaj">
@@ -109,10 +106,12 @@
                         <td align="right">Załącz plik</td>
                         <td><input type="file" name="plik" title="zalacznik"/></td>
                     </tr>
+                    
                 </table>
+                <button type="button" onclick="sprawdz()" class="przycisk" id="przeslij">Prześlij</button>
                 <input type="reset" onclick="resetuj()" class="przycisk" id="resetuj"/>
-                <!--<input type="submit" onsubmit="sprawdz()"/>-->
-                <button type="button" onclick="sprawdz()" class="przycisk">Prześlij</button>
+                
+                
                 <div class="walidacja" id="walidacja"></div>
                 <div class="walidacja" id="walidacja_1"></div>
                 <div class="walidacja" id="walidacja_2"></div>

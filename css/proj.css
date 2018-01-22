@@ -1,14 +1,14 @@
 body
 {
-background-color: white; 
-color: #76706F;
-font-size: 22px;
-margin: 0;
+    background-color: white; 
+    color: #76706F;
+    font-size: 22px;
+    margin: 0;
 }
 
 h1{
-font-size:24px;
-text-align: center;
+    font-size:24px;
+    text-align: center;
 }
 
 .page_container{
@@ -23,7 +23,6 @@ text-align: center;
 .grid:before{
     padding:0 8px;
 }
-
 
 .lewa{
     float:left;
@@ -45,60 +44,53 @@ text-align: center;
 
 h2{
     font-size:24px;
-text-align: center;
-width: 400px;
+    text-align: center;
+    width: 400px;
 }
 
 
 .zdjecie1{       
-    padding-left: 25px;
-    
+    padding-left: 25px;    
 }
-
-
 
 .du{    
     display:inline-block;    
     margin-right:5px!important;
-    padding-top: 3px;
-    
+    padding-top: 3px;    
 }
 
 #michal
 {
-width: 400px;
-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-
-
+    width: 400px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 
 #dane_os{
-background-color: white;
-float: left;
-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-
-width: 400px;
-text-align: left;
-min-height: 280px;
+    background-color: white;
+    float: left;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    width: 400px;
+    text-align: left;
+    min-height: 280px;
 }
 
 
 .naglowki{
-background-color: #76706F;
-border: 1px solid black;
-padding-left: 25px;
-color: black;
+    background-color: #76706F;
+    border: 1px solid black;
+    padding-left: 25px;
+    color: black;
 }
 
 #doswiadczenie, #wyksztalcenie{
-float: left;
-width: 700px;
-text-align: left;
-min-height: 280px;
-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-padding-bottom: 25px;
-margin-bottom: 25px;
+    float: left;
+    width: 700px;
+    text-align: left;
+    min-height: 280px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .edukacja{
@@ -108,18 +100,17 @@ margin-bottom: 25px;
 }
 
 #formularz{
-float: left;
-width: 700px;
-text-align: left;
-min-height: 280px;
-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-padding-bottom: 25px;
+    float: left;
+    width: 700px;
+    text-align: left;
+    min-height: 280px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    padding-bottom: 25px;
 }
 
 p{
-font-size: 18px;
-padding-left: 25px;
-
+    font-size: 18px;
+    padding-left: 25px;
 }
 
 .walidacja{
@@ -128,53 +119,52 @@ padding-left: 25px;
 }
 
 #data_ur{
-font-size: 18px;
-padding-left: 25px;
-font-style: italic;
-
+    font-size: 18px;
+    padding-left: 25px;
+    font-style: italic;
 }
 
 
 #adres, #email, #tel{
-font-size: 18px;
-padding-left: 25px;
-font-style: italic;
-color: #76706F;
+    font-size: 18px;
+    padding-left: 25px;
+    font-style: italic;
+    color: #76706F;
 }
 
 #lista_um, #jezyki{
-padding-left: 5px;
-padding-right: 5px;
-font-style: italic;
-list-style-type: circle;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: italic;
+    list-style-type: circle;
 }
 
 a{
-color: #76706F;
+    color: #76706F;
 }
 
 a:hover{
-color: black;
-background-color: gray;
+    color: black;
+    background-color: gray;
 }
 
 table, td{
-font-size: 18px;
-border: 1px solid black;
-width: 550px;
-margin: auto;
+    font-size: 18px;
+    border: 1px solid black;
+    width: 550px;
+    margin: auto;
 }
 
-    input:hover, button:hover{
+input:hover, button:hover{
     cursor: pointer;
     background-color: gray;    
-    }
+}
  
-    #sortData, #ukrywanie, #resetuj{
+#sortData, #ukrywanie, #resetuj, #przeslij{
         margin: 2px 2px 2px 75px;
-    }
+}
     
-    .stopka{
+.stopka{
       background-color: #76706F;
         color: black;
         box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
@@ -184,10 +174,8 @@ margin: auto;
         width: 100%;
         text-align: center;
         min-height: 100px;
-    } 
+} 
     
     .media{    
-    display:inline-block;    
-    
-    
+    display:inline-block;        
 }
